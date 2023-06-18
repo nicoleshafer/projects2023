@@ -1,0 +1,60 @@
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    height:35px;
+    padding:20px;
+    margin-right: 40px;
+    width:97.5%;
+    border-bottom: 2px solid silver;
+    background-color: rgb(255, 254, 253);
+}
+.rightSide-Nav, .leftSide-Nav{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+.logo{
+    height:55px;
+}
+
+.navLink{
+    text-decoration: none;
+    color: rgb(23, 22, 22);
+    font-weight: bold;
+}
+.navLink:hover{
+    color:darkgreen;
+}
+
+.navBtn-SignUp{
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.navBtn-Join{
+    background-color: black;
+    color:white;
+    font-weight: bold;
+}
+
+.mapMarker{
+    height:25px;
+}
+.mapMarker:hover{
+    cursor: pointer;
+}
+
+.navFlex{
+    display: flex;
+    gap:5px;
+    margin-right: 10px;
+}
+.btnStandard{
+    height:30px;
+    width: 80px;
+    border-radius: 20px;
+    border:1px solid black;
+}
+.btnStandard:hover{
+    opacity: 60%;
+}
