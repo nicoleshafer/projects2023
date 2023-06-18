@@ -17,6 +17,10 @@
 
 }
 
+.typewriter{
+  font-style: italic;
+  color:aquamarine
+}
 
 button{
   background-color: transparent;
@@ -165,6 +169,8 @@ section{
   display: flex;
   padding: 2px;
 }
+
+
 
 @font-face {
   font-family: qwigley-regular;

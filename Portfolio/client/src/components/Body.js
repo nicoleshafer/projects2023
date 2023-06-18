@@ -3,6 +3,10 @@ import nicole from "../images/nicole.jpg"
 import logo1 from "../images/2.png"
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import trip1 from "../images/tripWizard1.png"
+// import MovingText from 'react-moving-text';
+import Typewriter from "typewriter-effect"
+
+
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 // import 'pure-react-carousel/dist/react-carousel.es.css';
 import trip2 from "../images/tripwizard2.png"
@@ -42,7 +46,38 @@ const Body = () => {
                                 className='nicole'></img>
                             <div className='text'>
                                 <h1 className='textHeaderFont'>Hi, I'm Nicole!</h1>
-                                <p>A Full Stack Web Developer</p>
+                                {/* <p>A Full Stack Web Developer</p> */}
+                                {/* <MovingText 
+                                type="typewriter"
+                                className="movingText"
+                                    dataText={[
+                                        'Full Stack Web Developer',
+                                        'Pizza',
+                                        'Brötchen',
+                                        'Salat'
+                                    ]} /> */}
+                                    <Typewriter style={{ fontFamily: 'Arial', fontSize: '16px', color: 'red' }}
+                                    onInit={(typewriter)=>{
+                                        typewriter.typeString("A Full Stack Web Developer")
+                                        .pauseFor(2000)
+                                        .deleteAll()
+                                        typewriter.typeString("A Cat Mom")
+                                        .pauseFor(2000)
+                                        .deleteAll()
+                                        typewriter.typeString("A Traveler")
+                                        .pauseFor(2000)
+                                        .deleteAll()
+                                        typewriter.typeString(" A Coding enthusiast")
+                                        .pauseFor(2000)
+                                        .deleteAll()
+                                        typewriter.typeString(" A Student")
+                                        .pauseFor(2000)
+                                        .deleteAll()
+                                        typewriter.typeString("A Full Stack Web Developer")
+                                        .pauseFor(2000)
+                                        .start();
+                                        
+                                    }}/> 
                             </div>
                         </div>
                     </section>
@@ -58,8 +93,8 @@ const Body = () => {
                                 I am Full Stack Web Developer based in Asheville, North Carolina
                                 <br />
                                 I completed the Software Developement Certificate at Coding Dojo
-                                <br/> and have and Associates of Science Degree from Pellissippi Community College.
-                                
+                                <br /> and have and Associates of Science Degree from Pellissippi Community College.
+
                             </p>
                         </div>
                     </section>
@@ -74,20 +109,20 @@ const Body = () => {
                             <h2 className='projectsTitle'>My Projects</h2>
                             <p className='text-display'>
                                 <div className='seperate-cards'>
-                                <div className='card'>
-                                    <img 
-                                        src={trip1} 
-                                        alt="project"
-                                        className='card-photo'></img>
-                                    <p>Trip Wizard Travel</p>
-                                </div>
-                                <div className='card'>
-                                    <img 
-                                        src={trip1} 
-                                        alt="project"
-                                        className='card-photo'></img>
-                                    <p>Potter's Potions</p>
-                                </div>
+                                    <div className='card'>
+                                        <img
+                                            src={trip1}
+                                            alt="project"
+                                            className='card-photo'></img>
+                                        <p>Trip Wizard Travel</p>
+                                    </div>
+                                    <div className='card'>
+                                        <img
+                                            src={trip1}
+                                            alt="project"
+                                            className='card-photo'></img>
+                                        <p>Potter's Potions</p>
+                                    </div>
                                 </div>
                                 <div className='seperate-cards'>
                                     <div className='card'></div>
@@ -121,14 +156,14 @@ const Body = () => {
                                 </div>
                                 <div><h3>Databases</h3>
                                     <p>MongoDB</p>
-                                    </div>
+                                </div>
                                 <div><h3>Other Tools</h3>
                                     <p>API's</p>
                                     <p>VS Code</p>
                                     <p>Postman</p>
                                     <p>Git</p>
                                     <p>Github</p>
-                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div className='footer'>
