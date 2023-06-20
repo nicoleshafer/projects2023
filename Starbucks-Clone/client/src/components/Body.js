@@ -18,12 +18,19 @@ const Body = () => {
                         <br/>Caramel Ribbon Crunch Frappuccino®
                         <br/> blended beverage.
                         </p>
+                        <button className='orderBtn-Body'>Order now</button>
                     </div>
                 </div>
 
                 <div className='bodyOuterBox boxTwo'>
                 <div className='boxText'>
-                    <h2>Sweetest of the hive</h2>
+                    <h2>Sweetest of the <br/>hive</h2>
+                    <p>
+                        Buzzing into the café, an adorable new 
+                        <br/>Bumblebee Cake Pop dipped in chocolaty 
+                        <br/>icing.
+                    </p>
+                    <button className='orderBtn-Body'>Order now</button>
                 </div>
                     <div>
                         <img src={sweets} alt="pops" className='bodyImage'></img>

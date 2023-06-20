@@ -1,3 +1,11 @@
+@font-face {
+    font-family: soDoSans;
+    src: url("./fonts/SoDoSans.ttf");
+  }
+
+  *{
+    font-family: soDoSans;
+  }
 .navBar{
     display: flex;
     justify-content: space-between;
@@ -64,7 +72,6 @@
 
 
 
-
 .container{
     display: flex;
     align-items: center;
@@ -80,13 +87,12 @@
     /* border: 2px solid black; */
     margin-top: 30px;
     display: flex;
-    
+    display: flex;
+    text-align: center;
 }
 
 .boxOne{
     background: rgb(235,129,165);
-    display: flex;
-    text-align: center;
 }
 
 .boxTwo{
@@ -102,9 +108,22 @@
 .boxText h2{
     font-size: 52px;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: soDoSans;
 }
 .boxText p{
-    font-size: 30px;
+    font-size: 24px;
     font-weight: normal;
+    font-family: soDoSans;
+}
+
+
+.orderBtn-Body{
+    background-color: transparent;
+    border-radius: 20px;
+    height:35px;
+    width:115px;
+    font-size: 16px;
+    font-weight: bold;
+    border:1px solid black;
+    margin: 10px;
 }
