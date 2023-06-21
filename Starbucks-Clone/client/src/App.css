@@ -10,16 +10,32 @@
     display: flex;
     justify-content: space-between;
     height:65px;
-    padding:20px;
-    margin-right: 40px;
+    padding:20px 20px 10px 20px;
     width:97.5%;
-    border-bottom: 2px solid rgb(218,218,218);
+    /* border-bottom: 2px solid rgb(218,218,218); */
     background-color: rgb(255, 254, 253);
+}
+
+hr{
+    border-bottom: 1.5px solid rgb(218,218,218);
 }
 .rightSide-Nav, .leftSide-Nav{
     display: flex;
-    gap:10px;
+    gap:25px;
     align-items: center;
+    margin-right: 40px;
+    margin-left:14px;
+}
+
+.rightSide-Nav{
+    margin-right: 90px;
+}
+
+.leftSide-Nav{
+    display: flex;
+    gap:30px;
+    font-size: 14px;
+    font-weight: bold;
 }
 .logo{
     height:55px;
@@ -37,12 +53,14 @@
 .navBtn-SignUp{
     background-color: transparent;
     font-weight: bold;
+    padding: 5px;
 }
 
 .navBtn-Join{
     background-color: black;
     color:white;
     font-weight: bold;
+    padding: 5px;
 }
 
 .mapMarker{
@@ -85,7 +103,7 @@
     width:1440px;
     height:625px;
     /* border: 2px solid black; */
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     display: flex;
     text-align: center;
@@ -133,15 +151,38 @@
 
 
 
-.footerSectionOne{
+.footerSectionOne,
+.headerBtn{
     border-top: 2px solid rgb(218,218,218);
-    padding:30px;
-    font-size: 20px;
     display: flex;
-    flex-direction: column;
-    gap:25px
+    justify-content: space-evenly;
 }
 
+.headerBtn{
+    font-size: 20px;
+}
+.footerBtn button{
+    font-size: 18px;
+    font-weight:lighter;
+
+}
+.align{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.footerSectionOne button{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.footerSectionOne button:hover{
+    cursor: pointer;
+}
 
 .footerSocials{
     margin-top: 20px;
@@ -153,7 +194,3 @@
     justify-content: center;
 }
 
-hr{
-    background-color: aqua;
-    width:900px;
-}

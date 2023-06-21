@@ -22,6 +22,7 @@ const Nav = () => {
                     <button className='navBtn-Join btnStandard'>Join now</button>
                 </div>
             </div>
+                <hr />
         </div>
     );
 }
