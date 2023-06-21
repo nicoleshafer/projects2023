@@ -1,5 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 const Footer = () => {
     return (
@@ -11,7 +13,10 @@ const Footer = () => {
                 <div>For Business Partners</div>
                 <div>Order and Pick Up</div>
             </div>
-            <div className='footerSocials'></div>
+            <hr />
+            <div className='footerSocials'>
+            <i class="fa-brands fa-spotify fa-2xl"></i>
+            </div>
             <div className='footerSectionTwo'>
                 <Link></Link>
             </div>
