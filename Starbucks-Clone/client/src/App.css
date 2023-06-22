@@ -1,87 +1,96 @@
 @font-face {
     font-family: soDoSans;
     src: url("./fonts/SoDoSans.ttf");
-  }
+}
 
-  *{
+* {
     font-family: soDoSans;
-  }
-.navBar{
+}
+
+.navBar {
     display: flex;
     justify-content: space-between;
-    height:65px;
-    padding:20px 20px 10px 20px;
-    width:97.5%;
+    height: 65px;
+    padding: 20px 20px 10px 20px;
+    width: 97.5%;
     /* border-bottom: 2px solid rgb(218,218,218); */
     background-color: rgb(255, 254, 253);
 }
 
-hr{
-    border-bottom: 1.5px solid rgb(218,218,218);
-}
-.rightSide-Nav, .leftSide-Nav{
-    display: flex;
-    gap:25px;
-    align-items: center;
-    margin-right: 40px;
-    margin-left:14px;
+hr {
+    border-bottom: 1.5px solid rgb(235, 232, 232);
+    box-shadow:  .5px 3px 5px rgb(239, 239, 239);
 }
 
-.rightSide-Nav{
+.rightSide-Nav,
+.leftSide-Nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-right: 40px;
+    margin-left: 14px;
+}
+
+.rightSide-Nav {
     margin-right: 90px;
 }
 
-.leftSide-Nav{
+.leftSide-Nav {
     display: flex;
-    gap:30px;
+    gap: 30px;
     font-size: 14px;
     font-weight: bold;
 }
-.logo{
-    height:55px;
+
+.logo {
+    height: 55px;
 }
 
-.navLink{
+.navLink {
     text-decoration: none;
     color: rgb(23, 22, 22);
     font-weight: bold;
 }
-.navLink:hover{
-    color:darkgreen;
+
+.navLink:hover {
+    color: darkgreen;
 }
 
-.navBtn-SignUp{
+.navBtn-SignUp {
     background-color: transparent;
     font-weight: bold;
     padding: 5px;
 }
 
-.navBtn-Join{
+.navBtn-Join {
     background-color: black;
-    color:white;
+    color: white;
     font-weight: bold;
     padding: 5px;
 }
 
-.mapMarker{
-    height:25px;
+.mapMarker {
+    height: 25px;
 }
-.mapMarker:hover{
+
+.mapMarker:hover {
     cursor: pointer;
 }
 
-.navFlex{
+.navFlex {
     display: flex;
-    gap:5px;
+    gap: 5px;
     margin-right: 10px;
 }
-.btnStandard{
-    height:30px;
+
+.btnStandard {
+    height: 30px;
     width: 80px;
     border-radius: 20px;
-    border:1px solid black;
+    border: 1px solid black;
 }
-.btnStandard:hover{
+
+.btnStandard:hover {
     opacity: 60%;
 }
 
@@ -90,18 +99,19 @@ hr{
 
 
 
-.container{
+.container {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.bodyImage{
-    height:627px;
+
+.bodyImage {
+    height: 627px;
 }
 
-.bodyOuterBox{
-    width:1440px;
-    height:625px;
+.bodyOuterBox {
+    width: 1440px;
+    height: 625px;
     /* border: 2px solid black; */
     margin-top: 20px;
     display: flex;
@@ -109,41 +119,42 @@ hr{
     text-align: center;
 }
 
-.boxOne{
-    background: rgb(235,129,165);
+.boxOne {
+    background: rgb(235, 129, 165);
 }
 
-.boxTwo{
-    background-color: rgb(241,255,103);
+.boxTwo {
+    background-color: rgb(241, 255, 103);
     margin-bottom: 35px;
 }
 
-.boxText{
+.boxText {
     width: 715px;
-    margin:40px;
+    margin: 40px;
     padding: 20px;
 }
 
-.boxText h2{
+.boxText h2 {
     font-size: 52px;
     font-weight: bold;
     font-family: soDoSans;
 }
-.boxText p{
+
+.boxText p {
     font-size: 24px;
     font-weight: normal;
     font-family: soDoSans;
 }
 
 
-.orderBtn-Body{
+.orderBtn-Body {
     background-color: transparent;
     border-radius: 20px;
-    height:35px;
-    width:115px;
+    height: 35px;
+    width: 115px;
     font-size: 16px;
     font-weight: bold;
-    border:1px solid black;
+    border: 1px solid black;
     margin: 10px;
 }
 
@@ -151,46 +162,100 @@ hr{
 
 
 
-.footerSectionOne,
-.headerBtn{
-    border-top: 2px solid rgb(218,218,218);
+
+.headerBtn,
+.footerOneWidth {
     display: flex;
     justify-content: space-evenly;
 }
 
-.headerBtn{
+.headerBtn {
     font-size: 20px;
+    margin-bottom: 10px;
 }
-.footerBtn button{
-    font-size: 18px;
-    font-weight:lighter;
 
+.footerBtn button {
+    font-size: 16px;
+    font-weight: light;
+    color: gray;
 }
-.align{
+
+.footerBtn {
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    gap: 20px;
 }
 
-.footerSectionOne button{
+.footerBtn button:hover {
+    color: black;
+
+}
+
+.align {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.footerOneWidth {
+    width: 80%;
+    margin-left: 50px;
+    padding-left: 50px;
+
+}
+
+.footerSectionOne {
+    width: 100%;
+}
+
+.footerOneWidth button {
     border: none;
     background-color: transparent;
     display: flex;
     align-items: center;
     padding-bottom: 15px;
+
 }
 
-.footerSectionOne button:hover{
+.footerOneWidth button:hover {
     cursor: pointer;
 }
 
-.footerSocials{
-    margin-top: 20px;
-    padding:30px;
-    width:900px;
-    height:200px;
+.footerSocialsContainer {
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-bottom: 45px;
+    padding-bottom: 0;
+    padding: 30px 70px 0;
+    width: 900px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 20px;
 }
 
+.footerSectionTwo {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerSectionTwoTop {
+    display: flex;
+    margin-left: 60px;
+    padding-left: 60px;
+    align-items: center;
+}
+
+.footerSectionTwoBottom {
+    margin-left: 65px;
+    padding-left: 60px;
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 60px;
+}
+
+.footerSectionTwo button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    padding-right: 13px;
+}
