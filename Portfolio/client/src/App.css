@@ -10,40 +10,43 @@
   justify-content:space-around;
   gap: 40px;
   padding-top: 50px;
-  margin: 20px -85px ;
+  /* margin: 20px -85px ; */
   width: 100%;
   height:70px;
   background-color: transparent;
-
+  
 }
 
-.typewriter{
-  font-style: italic;
-  color:aquamarine
-}
 
 button{
   background-color: transparent;
   border:none;
   text-decoration: none;
-  padding: 10px;
+  padding: 22px;
   font-size: 20px;
 }
 
 button:hover{
   font-size: 23px;
   text-decoration: underline;
-  color:rgb(212, 208, 208);
+  padding: 15px;
+  color:rgb(0, 0, 0);
   cursor: pointer;
 }
 .body{
-  background-color: rgb(252, 250, 250);
+  background-color: rgb(214, 212, 212);
 }
 section{
   height:100vh;
   scroll-snap-align: start;
   display: flex;
   justify-content: center;
+    /* background-color: beige; */
+    /* background-color: rgb(145, 111, 78); */
+    background-color: rgb(255,255,255);
+    /* border-bottom: 2px solid black; */
+    width: 1500px;
+    /* margin-bottom: 30px; */
 }
 
 .container{
@@ -56,10 +59,10 @@ section{
 }
 
 
-
+/* 
 .pageOne{
   background-color: peru;
-  
+  background-color: beige;
 }
 .pageTwo{
   background-color: cornsilk;
@@ -70,14 +73,22 @@ section{
 }
 .pageFour{
   background-color: rgb(213, 203, 184);
+} */
+
+
+
+.firstPageAlign{
+  display: flex;
+  gap: 50px;
 }
 
 .nicole{
-  height:470px;
-  margin-left: 70px;
-  border-radius: 5px;
-  opacity: 78%;
+  height:570px;
+  /* margin-left: 70px; */
+  border-radius: 100%;
+  /* box-shadow: 0px 0px 12px  rgb(255, 255, 255); */
 }
+
 
 .photo-grid{
   display: flex;
@@ -93,8 +104,16 @@ section{
   font-size: 30px;
   /* margin: 0 40px; */
   /* padding:0 100px; */
-  margin: 0;
+  margin: auto;
   flex-direction: column;
+  align-items: center;
+
+}
+
+.typewriter{
+  font-family: sans-serif;
+  font-size: 20px;
+  font-style: italic;
 }
 
 .text p{

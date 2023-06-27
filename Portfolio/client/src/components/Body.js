@@ -41,36 +41,29 @@ const Body = () => {
                 <div>
                     <section className='pageOne'>
                         <div className='photo-grid'>
+                            <div className='firstPageAlign'>
                             <img src={nicole}
                                 alt="portrait"
                                 className='nicole'></img>
                             <div className='text'>
                                 <h1 className='textHeaderFont'>Hi, I'm Nicole!</h1>
-                                {/* <p>A Full Stack Web Developer</p> */}
-                                {/* <MovingText 
-                                type="typewriter"
-                                className="movingText"
-                                    dataText={[
-                                        'Full Stack Web Developer',
-                                        'Pizza',
-                                        'Brötchen',
-                                        'Salat'
-                                    ]} /> */}
-                                    <Typewriter style={{ fontFamily: 'Arial', fontSize: '16px', color: 'red' }}
+                                <div className='typewriter'>
+                                <Typewriter
+                                    className="typewriter"
                                     onInit={(typewriter)=>{
                                         typewriter.typeString("A Full Stack Web Developer")
                                         .pauseFor(2000)
                                         .deleteAll()
-                                        typewriter.typeString("A Cat Mom")
+                                        typewriter.typeString("Cat Mom")
                                         .pauseFor(2000)
                                         .deleteAll()
-                                        typewriter.typeString("A Traveler")
+                                        typewriter.typeString("Traveler")
                                         .pauseFor(2000)
                                         .deleteAll()
-                                        typewriter.typeString(" A Coding enthusiast")
+                                        typewriter.typeString("Coding Enthusiast")
                                         .pauseFor(2000)
                                         .deleteAll()
-                                        typewriter.typeString(" A Student")
+                                        typewriter.typeString("Student")
                                         .pauseFor(2000)
                                         .deleteAll()
                                         typewriter.typeString("A Full Stack Web Developer")
@@ -78,6 +71,8 @@ const Body = () => {
                                         .start();
                                         
                                     }}/> 
+                                </div>
+                            </div>
                             </div>
                         </div>
                     </section>
@@ -107,33 +102,63 @@ const Body = () => {
                         {/* <div className='section-content'> */}
                         <div className='my-project'>
                             <h2 className='projectsTitle'>My Projects</h2>
-                            <p className='text-display'>
-                                <div className='seperate-cards'>
+                            <div className='text-display'>
+                            <div className='seperate-cards'>
+                                    <div className='card'>
                                     <div className='card'>
                                         <img
                                             src={trip1}
                                             alt="project"
                                             className='card-photo'></img>
-                                        <p>Trip Wizard Travel</p>
+                                        <p>Starbucks Clone</p>
                                     </div>
+                                    </div>
+
+                                    <div className='card'>
                                     <div className='card'>
                                         <img
                                             src={trip1}
                                             alt="project"
                                             className='card-photo'></img>
-                                        <p>Potter's Potions</p>
+                                        <p>Calendar App</p>
                                     </div>
+                                    </div>
+                                    
                                 </div>
                                 <div className='seperate-cards'>
-                                    <div className='card'></div>
-                                    <div className='card'></div>
+                                    <div className='card'>
+                                    <div className='card'>
+                                        <img
+                                            src={trip1}
+                                            alt="project"
+                                            className='card-photo'></img>
+                                        <p>Starbucks Clone</p>
+                                    </div>
+                                    </div>
+
+                                    <div className='card'>
+                                    <div className='card'>
+                                        <img
+                                            src={trip1}
+                                            alt="project"
+                                            className='card-photo'></img>
+                                        <p>Calendar App</p>
+                                    </div>
+                                    </div>
+                                    
                                 </div>
-                            </p>
+                            </div>
                             <div className='wrapper'>
                                 <div className='layer bottom'></div>
                             </div>
                         </div>
+
                     </section>
+
+
+
+
+
                     <section className='pageFour'>
                         <div className='section-content'>
                             <h2 className='text-header textHeaderFont'>My Skills</h2>
