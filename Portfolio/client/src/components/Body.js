@@ -1,17 +1,10 @@
 import React from 'react';
+import {Link} from "react-router-dom"
 import nicole from "../images/nicole.jpg"
 import logo1 from "../images/2.png"
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import trip1 from "../images/tripWizard1.png"
-// import MovingText from 'react-moving-text';
 import Typewriter from "typewriter-effect"
-
-
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
-// import 'pure-react-carousel/dist/react-carousel.es.css';
-import trip2 from "../images/tripwizard2.png"
-import trip3 from "../images/tripwizard3.png"
-import Carousel from '../components/Carousel';
+import starbucks from "../images/starbs-clone.jpg"
 
 const Body = () => {
     return (
@@ -27,9 +20,10 @@ const Body = () => {
                     </div>
                 </div>
                 <div>
-                    <button>About</button>
+                    <button>Resume</button>
                     <button>Projects</button>
                     <button>Contact</button>
+                    <button>Skills</button>
 
                 </div>
             </div>
@@ -52,25 +46,30 @@ const Body = () => {
                                     className="typewriter"
                                     onInit={(typewriter)=>{
                                         typewriter.typeString("A Full Stack Web Developer")
-                                        .pauseFor(2000)
+                                        .pauseFor(1000)
                                         .deleteAll()
                                         typewriter.typeString("Cat Mom")
-                                        .pauseFor(2000)
+                                        .pauseFor(1000)
                                         .deleteAll()
                                         typewriter.typeString("Traveler")
-                                        .pauseFor(2000)
+                                        .pauseFor(1000)
                                         .deleteAll()
                                         typewriter.typeString("Coding Enthusiast")
-                                        .pauseFor(2000)
+                                        .pauseFor(1000)
                                         .deleteAll()
                                         typewriter.typeString("Student")
-                                        .pauseFor(2000)
+                                        .pauseFor(1000)
                                         .deleteAll()
                                         typewriter.typeString("A Full Stack Web Developer")
-                                        .pauseFor(2000)
+                                        .pauseFor(1000)
                                         .start();
                                         
                                     }}/> 
+                                </div>
+                                <div className='socialIcons'>
+                                <i class="fa-brands fa-github fa-xs socialIcons"  ></i>
+                                <i class="fa-brands fa-linkedin-in fa-xs socialIcons"></i>
+                                <i class="fa-brands fa-instagram fa-xs socialIcons"></i>
                                 </div>
                             </div>
                             </div>
@@ -83,14 +82,23 @@ const Body = () => {
                     <section className='pageTwo'>
                         <div className='section-content'>
                             <h2 className='text-header textHeaderFont'>Who am I?</h2>
+                            <div className='section-content-center-info'>
                             <p className='text-display'>
-                                My name is Nicole Shafer<br />
-                                I am Full Stack Web Developer based in Asheville, North Carolina
+                                Nicole Shafer<br />
+                            </p>
+                                <div>
+                                    
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Asheville
+                                </div>
+                            <p className='text-display'>
+                                {/* I am Full Stack Web Developer based in Asheville, North Carolina
                                 <br />
                                 I completed the Software Developement Certificate at Coding Dojo
-                                <br /> and have and Associates of Science Degree from Pellissippi Community College.
-
+                                <br /> and have and Associates of Science Degree from Pellissippi Community College. */}
+                                
                             </p>
+                            </div>
                         </div>
                     </section>
 
@@ -110,17 +118,17 @@ const Body = () => {
                                             src={trip1}
                                             alt="project"
                                             className='card-photo'></img>
-                                        <p>Starbucks Clone</p>
+                                        <p>Trip Wizard Travel</p>
                                     </div>
                                     </div>
 
                                     <div className='card'>
                                     <div className='card'>
                                         <img
-                                            src={trip1}
+                                            src={starbucks}
                                             alt="project"
                                             className='card-photo'></img>
-                                        <p>Calendar App</p>
+                                        <p>Starbucks Clone</p>
                                     </div>
                                     </div>
                                     
@@ -132,7 +140,7 @@ const Body = () => {
                                             src={trip1}
                                             alt="project"
                                             className='card-photo'></img>
-                                        <p>Starbucks Clone</p>
+                                        <p>Potter's Potions</p>
                                     </div>
                                     </div>
 
