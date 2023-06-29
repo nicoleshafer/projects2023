@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from "react-router-dom"
+import {useNavigate } from 'react-router-dom'
 import nicole from "../images/nicole.jpg"
 import logo1 from "../images/2.png"
 import trip1 from "../images/tripWizard1.png"
@@ -7,6 +7,11 @@ import Typewriter from "typewriter-effect"
 import starbucks from "../images/starbs-clone.jpg"
 
 const Body = () => {
+    const navigate= useNavigate()
+
+    const projectsButton =(e)=>{
+        navigate("/projects")
+    }
     return (
         <div className='body'>
             <div className='navBar'>
@@ -21,7 +26,7 @@ const Body = () => {
                 </div>
                 <div>
                     <button>Resume</button>
-                    <button>Projects</button>
+                    <button onClick={projectsButton}>Projects</button>
                     <button>Contact</button>
                     <button>Skills</button>
 
