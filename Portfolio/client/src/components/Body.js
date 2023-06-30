@@ -160,6 +160,7 @@ const Body = () => {
                                     </div>
                                     
                                 </div>
+                            <button onClick={projectsButton}>More Projects</button>
                             </div>
                             <div className='wrapper'>
                                 <div className='layer bottom'></div>

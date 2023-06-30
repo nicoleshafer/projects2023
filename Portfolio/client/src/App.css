@@ -278,14 +278,6 @@ section{
 }
 
 
-.projectCardAlign{
-  display: flex;
-  margin-top: 40px;
-  margin-left: 30px;
-}
-
-
-
 .tab-container{
   /* border:2px solid black; */
   display: flex;
@@ -296,6 +288,7 @@ section{
   border: 1px solid black;
   padding: 15px;
   height: 30px;
+  width:170px;
 }
 
 
@@ -334,11 +327,50 @@ section{
   display: block;
 }
 
+.card-photo-projects-page{
+  height: 500px;
+  display: flex;
+  padding: 2px;
+}
+
+
+.photo-tab{
+  margin: 0 10px;
+  padding: 20px;
+  /* transform: translateY(-10%); */
+  /* transform: translateX(20%); */
+  display: flex;
+}
+.photo-tab:hover{
+  cursor: pointer;
+}
+.active-photo-tabs{
+  border-bottom: 2px solid black;
+  font-size: 20px;
+}
+
+.photo-content{
+  display: none;
+  height:300px;
+}
+
+.active-photo-content{
+  display: block;
+}
 
 
 
+.projectCardAlign{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translateX(10%);
+}
 
-
+/* .projectInformation{
+  transform: translateX(180%);
+} */
 
 
 
