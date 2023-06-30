@@ -133,7 +133,7 @@ section{
 .text-display{
   font-size: 18px;
   display: flex;
-  gap:50px;
+  /* gap:50px; */
   margin:0 50px;
   /* margin-top: 50px; */
 }
@@ -144,7 +144,7 @@ section{
 
 .section-content{
   display: flex;
-  text-align: center;
+  /* text-align: center; */
   flex-direction: column;
   justify-content: center;
 }
@@ -152,7 +152,7 @@ section{
 .section-content-center-info{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   gap: 20px;
   justify-content: center;
 }
@@ -243,6 +243,8 @@ section{
   font-family: qwigley-regular;
   font-size: 80px;
   font-weight: lighter;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -268,7 +270,6 @@ section{
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* margin: 80px 0; */
   transform: translateY(30%);
 }
 
@@ -376,12 +377,37 @@ section{
   transform: translateX(10%);
 }
 
-/* .projectInformation{
-  transform: translateX(180%);
-} */
 
 
+.about-me-icons{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+  padding: 5px;
+  align-items: flex-start;
+}
 
+.hobby-icons{
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: end;
+}
+.about-me{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about-photo{
+  width:110px;
+  border-radius: 50%;
+  margin-top: 0;
+}
+
+.photo-display{
+  display: flex;
+  justify-content: space-evenly;
+}
 @media (max-width: 960px) {
   .card{
     height: 100px;
@@ -424,18 +450,19 @@ section{
     display: flex;
     flex-direction: column;
     padding:auto;
-    gap:0;
+    /* gap:0; */
   }
-  .seperate-cards{
+  /* .seperate-cards{
     margin: 0;
-  }
+  } */
   /* .pageThree.logo{
     display: none;
   } */
   .logo{
     width:210px;
     height:180px;
-    margin-left: 90px;
+    /* margin-left: 60px; */
+    margin-bottom: 0;
   }
 }
 
