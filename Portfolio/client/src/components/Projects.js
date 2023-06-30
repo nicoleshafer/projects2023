@@ -5,6 +5,8 @@ import starbucks from "../images/starbs-clone.jpg"
 import tripWizardTravel from "../images/tripWizard1.png"
 import trip2 from "../images/tripwizard2.png"
 import trip3 from "../images/tripwizard3.png"
+import potters from "../images/potter-potions.png"
+import pottersReviews from "../images/potters-reviews.png"
 
 const Projects = () => {
 
@@ -30,7 +32,7 @@ const Projects = () => {
                     </div>
                     <div className='information-section'>
                         <div>
-                            <h2>My Projects</h2>
+                            <h2 className='projectsTitle-ProjectPage'>Nicole's Projects</h2>
                         </div>
                         <div>
                             <div className='tab-container'>
@@ -193,14 +195,14 @@ const Projects = () => {
                                             </div>
                                             <div className={photoState === 1 ? 'photo-content active-photo-content' : "photo-content"} >
                                                 <img
-                                                    src={starbucks}
+                                                    src={potters}
                                                     alt="project"
                                                     className='card-photo-projects-page'></img>
                                             </div>
 
                                             <div className={photoState === 2 ? 'photo-content active-photo-content' : "photo-content"}>
                                                 <img
-                                                    src={trip2}
+                                                    src={pottersReviews}
                                                     alt="project"
                                                     className='card-photo-projects-page'></img>
                                             </div>

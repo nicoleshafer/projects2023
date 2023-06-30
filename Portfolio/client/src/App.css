@@ -227,6 +227,14 @@ section{
   margin-top: 60px;
   text-align: center;
 }
+
+.projectsTitle-ProjectPage{
+  font-family: qwigley-regular;
+  font-size: 80px;
+  font-weight: lighter;
+  transform: translateY(-30%);
+  margin: auto;
+}
 .text h1{
   margin:auto;
   
@@ -250,7 +258,7 @@ section{
 
 .secondaryPageContainer{
   width:1500px;
-  height: 1900px;
+  height: 1200px;
   background-color: white;
   display: flex;
   flex-direction: column;
