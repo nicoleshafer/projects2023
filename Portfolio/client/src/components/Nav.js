@@ -9,7 +9,7 @@ const Nav = () => {
         navigate("/")
     }
 
-    const Projects = (e) =>{
+    const projectsButton = (e) =>{
         navigate("/projects")
     }
     return (
@@ -26,9 +26,8 @@ const Nav = () => {
                 <div>
                     <button onClick={Home}>Home</button>
                     <button>Resume</button>
-                    {/* <button onClick={projectsButton}>Projects</button> */}
                     <button>Contact</button>
-                    <button>Skills</button>
+                    <button onClick={projectsButton}>Projects</button>
 
                 </div>
                 </div>

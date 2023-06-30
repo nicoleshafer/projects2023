@@ -33,9 +33,8 @@ const Body = () => {
                 </div>
                 <div>
                     <button>Resume</button>
-                    <button onClick={projectsButton}>Projects</button>
                     <button>Contact</button>
-                    <button>Skills</button>
+                    <button onClick={projectsButton}>Projects</button>
 
                 </div>
             </div>
@@ -121,13 +120,13 @@ const Body = () => {
                                     <div className='about-me-icons'>
                                         <div>
                                             <i class="fa-solid fa-location-dot fa-lg"></i>
-                                            Asheville
+                                            Asheville, NC
                                         </div>
                                         <div>
-                                            <i class="fa-solid fa-graduation-cap fa-lg"></i> Software Developement Certificate at Coding Dojo
+                                            <i class="fa-solid fa-graduation-cap fa-lg"></i> Software Developement Certificate |  Coding Dojo
                                         </div>
                                         <div>
-                                            <i class="fa-solid fa-graduation-cap fa-lg"></i>  Associates of Science Degree
+                                            <i class="fa-solid fa-graduation-cap fa-lg"></i>  Associates of Science Degree | Pellissippi Community College
                                         </div>
                                     </div>
                                 </div>
@@ -162,7 +161,8 @@ const Body = () => {
                                             <img
                                                 src={trip1}
                                                 alt="project"
-                                                className='card-photo'></img>
+                                                className='card-photo'
+                                                onClick={projectsButton}></img>
                                             <p>Trip Wizard Travel</p>
                                         </div>
                                     </div>
@@ -172,7 +172,8 @@ const Body = () => {
                                             <img
                                                 src={starbucks}
                                                 alt="project"
-                                                className='card-photo'></img>
+                                                className='card-photo'
+                                                onClick={projectsButton}></img>
                                             <p>Starbucks Clone</p>
                                         </div>
                                     </div>
@@ -184,7 +185,8 @@ const Body = () => {
                                             <img
                                                 src={potters}
                                                 alt="project"
-                                                className='card-photo'></img>
+                                                className='card-photo'
+                                                onClick={projectsButton}></img>
                                             <p>Potter's Potions</p>
                                         </div>
                                     </div>
@@ -194,7 +196,8 @@ const Body = () => {
                                             <img
                                                 src={trip1}
                                                 alt="project"
-                                                className='card-photo'></img>
+                                                className='card-photo'
+                                                onClick={projectsButton}></img>
                                             <p>Calendar App</p>
                                         </div>
                                     </div>
@@ -246,7 +249,7 @@ const Body = () => {
                             </div>
                         </div>
                         <div className='footer'>
-                            Contact
+                            {/* Contact */}
                         </div>
                     </section>
                 </div>
