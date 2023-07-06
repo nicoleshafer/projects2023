@@ -1,3 +1,7 @@
+@font-face {
+  font-family: windsong;
+  src: url("./font/WindSong-Regular.ttf");
+}
 .navBarContainer{
   height:100px;
   width:100%;
@@ -35,14 +39,20 @@
 }
 
 .spacing{
-  height:300px;
+  height:130px;
+  background-color: rgb(245, 241, 241);
+}
+
+.about-me-container{
+  border-top: 2px solid black;
 }
 .about-me{
   text-align: center;
   display: flex;
-  padding: 15px;
+  padding: 80px;
   justify-content: center;
   gap:70px;
+  background-color: rgb(245, 241, 241);
 }
 
 .about-me p{
@@ -55,4 +65,57 @@
 .stephanie-photo{
   height:400px;
   border-radius: 3px;
+}
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: windsong;
+  font-size: 36px;
+  font-style: normal;
+  font-weight:lighter;
+  padding: 50px 30px;
+  gap:25px;
+  background-color: rgb(245, 241, 241);
+}
+
+
+
+.intro button{
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid black;
+  font-size: 22px;
+  padding: 5px;
+  
+}
+.intro button:hover{
+  cursor: pointer;
+  border: none;
+}
+
+.beach-wave-icon{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(245, 241, 241);
+}
+
+
+
+
+.footer-container{
+  height:300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(245, 241, 241);
+  border-top: 2px solid black;
+  padding: 10px;
+}
+.footer-container button{
+  display: flex;
+  flex-direction: row;
+  margin:20px;
 }
