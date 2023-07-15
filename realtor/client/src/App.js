@@ -1,30 +1,24 @@
 import "./App.css";
-import logo from "./img/logo.png";
 import beachfront from "./img/beachfront.webp";
 import home from "./img/home.jpeg";
 import patio from "./img/patio.webp";
 import stephanie from "./img/stephanie.jpg";
 import beachIcon from "./img/beach-wave.png"
 import Footer from "./components/Footer"
-
+import NavBar from "./components/NavBar"
 
 function App() {
   return (
     <div className="App">
-      <div className="navBarContainer">
-        <button>Home</button>
-        <button>About Me</button>
-        <img src={logo} alt="website logo" className="logoPhoto"></img>
-        <button>Contact Me</button>
-        <button>My Work</button>
-      </div>
+      <NavBar />
       <div className="photo-row">
+     
         <img
           src={beachfront}
           alt="beachfront property"
           className="beachfront"
         ></img>
-        <img src={home} alt="waterfront home"></img>
+         <img src={home} alt="waterfront home"></img>
         <img src={patio} alt="patio"></img>
       </div>
 
@@ -42,7 +36,7 @@ function App() {
       <div className="beach-wave-icon">
         <img src={beachIcon} alt="Beach Waves Icon"></img>
       </div>
-      <div className="spacing"></div>
+      {/* <div className="spacing"></div> */}
 
       <div className="about-me-container">
         <div className="about-me">
