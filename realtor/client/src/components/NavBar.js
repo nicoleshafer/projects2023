@@ -16,8 +16,10 @@ const NavBar = () => {
         <img src={logo} alt="website logo" className="logoPhoto"></img>
         <button>Contact Me</button>
         <div className="search-bar-container">
-          <SearchBar setResults={setResults}/>
-          <SearchResults results={results}/>
+          <SearchBar/>
+          {/* <SearchBar setResults={setResults}/> */}
+          {/* <SearchResults results={results}/> */}
+        
         </div>
       </div>
         </div>

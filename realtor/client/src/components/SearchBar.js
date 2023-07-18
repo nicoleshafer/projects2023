@@ -30,13 +30,16 @@ const SearchBar = ({setResults}) => {
     return (
         <div>
            <div className='input-wrapper'>
-            <FaSearch id="search-icon"/>
-                <input type="search" 
-                    placeholder="Search"
-                    value={input}
-                    onChange={(e) => changeHandler(e.target.value)}
-                    className="search-bar">
-                </input>
+            <form action="/search" method="GET"> 
+                <FaSearch id="search-icon"/>
+                    <input type="search" 
+                        placeholder="Search"
+                        value={input}
+                        onChange={(e) => changeHandler(e.target.value)}
+                        className="search-bar">
+                    </input>
+            </form>
+                
            </div>
         </div>
     );
