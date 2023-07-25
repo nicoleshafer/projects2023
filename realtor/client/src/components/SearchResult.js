@@ -1,13 +1,13 @@
-import React from 'react';
-import "../Styling/SearchResult.css"
+// import React from 'react';
+// import "../Styling/SearchResult.css"
 
-const SearchResult = ({result}) => {
-    return (
-        <div className='search-result'>
-            {result.name}
+// const SearchResult = ({result}) => {
+//     return (
+//         <div className='search-result'>
+//             {result.name}
             
-        </div>
-    );
-}
+//         </div>
+//     );
+// }
 
-export default SearchResult;
+// export default SearchResult;
