@@ -1,0 +1,13 @@
+https://www.youtube.com/watch?v=MIYQR-Ybrn4&list=PLjwm_8O3suyOgDS_Z8AWbbq3zpCmR-WE9
+
+
+https://home.openweathermap.org/api_keys
+
+use Built-in API request by city name
+
+
+https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+
+add in city name and change API key
+
+https://api.openweathermap.org/data/2.5/weather?q=sarasota&appid=1d8228106da4770b59c5c51fceeae29e&units=imperial
