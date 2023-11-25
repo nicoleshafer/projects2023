@@ -5,9 +5,8 @@ https://home.openweathermap.org/api_keys
 
 use Built-in API request by city name
 
-
 https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 
-add in city name and change API key
+delete city name and, change units and change API key
 
 https://api.openweathermap.org/data/2.5/weather?q=sarasota&appid=1d8228106da4770b59c5c51fceeae29e&units=imperial
